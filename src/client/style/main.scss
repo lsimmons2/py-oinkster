@@ -1,0 +1,26 @@
+
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
+
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css);
+@import './variables';
+@import './nav.scss';
+@import './home.scss';
+@import './about.scss';
+@import './board.scss';
+@import './log-in.scss';
+@import './sign-up.scss';
+@import './user-profile.scss';
+@import './settings.scss';
+@import './users.scss';
+
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: #d4d2d2;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.view {
+  margin-top: 40px;
+  margin-bottom: 60px;
+}

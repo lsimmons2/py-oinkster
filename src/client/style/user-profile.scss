@@ -1,0 +1,238 @@
+
+#user-profile {
+
+  .profile {
+    border: solid 2px $primary-pink;
+    border-radius: 4px;
+    width: 85%;
+    padding: 15px;
+    box-shadow: 0px 5px 10px #b7b7b7;
+    color: $primary-grey;
+
+    @media only screen and (min-width: 768px){
+      margin: 0 0 0 40px;
+    }
+
+    @media only screen and (max-width: 767px){
+      margin: 0 auto;
+    }
+
+    .profile-top {
+
+      height: 50%;
+
+      .profile-avatar-wrapper {
+        display: inline-block;
+        width: 40%;
+        height: 100%;
+        @media only screen and (max-width: 767px){
+          margin: 0 auto;
+        }
+        img {
+          max-width: 100%;
+          max-height: 100%;
+          border-radius: 4px;
+          display: block;
+          margin: 0 auto;
+        }
+      }
+
+      .profile-username-wrapper {
+        display: inline-block;
+        width: 55%;
+        position: relative;
+        bottom: 15px;
+        word-wrap: break-word;
+        margin-left: 5%;
+        @media only screen and (max-width: 767px){
+          margin: 0 auto;
+        }
+        h3, h4 {
+          text-align: center;
+        }
+      }
+
+    }
+
+    .profile-bio-container {
+      p {
+        text-align: center;
+      }
+      h5 {
+        text-align: center;
+      }
+    }
+
+    .profile-following-container {
+      .profile-following-inner-container {
+        vertical-align: top;
+        display: inline-block;
+        width: 50%;
+        text-align: center;
+      }
+      .profile-follow-button-container {
+        width: 50%;
+        margin: 5px auto 0;
+        @media only screen and (min-width: 1000px){
+          margin-top: 15px;
+        }
+        .follow-button {
+          width: 100%;
+          white-space: normal;
+        }
+      }
+    }
+
+  }
+
+  #profile-feed {
+
+    #profile-feed-header-container {
+      width: 85%;
+      @media only screen and (min-width: 768px){
+        margin: 0px 20px 20px 0px;
+      }
+      @media only screen and (max-width: 767px){
+        margin: 20px auto;
+      }
+      #profile-feed-header {
+        color: $primary-grey;
+        text-align: center;
+        margin-top: 0;
+      }
+    }
+
+    .oink {
+      box-shadow: 0px 5px 10px #b7b7b7;
+      color: $primary-grey;
+      border: 2px solid $primary-pink;
+      border-radius: 4px;
+      width: 85%;
+      height: 80px;
+      padding-top: 1px;
+      @media only screen and (min-width: 768px){
+        margin: 0px 20px 20px 0px;
+      }
+      @media only screen and (max-width: 767px){
+        margin: 20px auto;
+      }
+      .avatar-container {
+        padding: 4px;
+        float: left;
+        .avatar {
+          height: 65px;
+          border-radius: 4px;
+          margin-right: 10px;
+        }
+      }
+      .right-container {
+        h4 {
+          font-weight: bold;
+          margin-bottom: 0;
+          display: inline-block;
+        }
+        .oink-username-link {
+          color: $primary-grey;
+        }
+        .date-time {
+          margin-left: 4px;
+        }
+      }
+    }
+
+  }
+
+  // component-universal classes
+  .clickable {
+    cursor: pointer;
+  }
+
+  .not-clickable {
+    cursor: default;
+    color: $primary-grey;
+  }
+
+  .no-underline {
+    text-decoration: none;
+    color: $primary-grey;
+  }
+
+}
+
+.following-modal {
+
+  position: absolute;
+  top: 100px;
+  left: 150px;
+  right: 150px;
+  bottom: 100px;
+  border: 1px solid #ccc;
+  background: #fff;
+  overflow: auto;
+  // WebkitOverflowScrolling    : touch;
+  border-radius: 4px;
+  outline: none;
+  padding: 20px;
+
+  .following-modal-header-container {
+    height: 10%;
+    h4 {
+      text-align: center;
+    }
+  }
+
+  .following-modal-list-container {
+    height: 75%;
+
+    .following-modal-block-container {
+
+      cursor: pointer;
+
+      .following-modal-block {
+        padding: 5px;
+
+        .following-modal-block-picture-container {
+          width: 33%;
+          display: inline-block;
+          .following-modal-block-picture-wrapper {
+            width: 67px;
+            margin: 0 auto;
+            img {
+              height: 65px;
+              border-radius: 4px;
+              margin: 0 auto;
+            }
+          }
+        }
+
+        .following-modal-block-info-container {
+          width: 67%;
+          display: inline-block;
+        }
+
+      }
+
+      &:last-of-type {
+        .following-modal-block-separator {
+          border-bottom-width: 0;
+        }
+      }
+    }
+
+  }
+
+  .following-modal-block-separator {
+    width: 80%;
+    margin: 0 auto;
+    border-bottom: 1px solid #cccccc;
+  }
+
+  .modal-close-button-container {
+    height: 15%;
+    .modal-close-button {
+      width: 30%;
+      margin: 10px auto 0;
+    }
+  }
+
+}

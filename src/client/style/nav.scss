@@ -1,0 +1,54 @@
+
+#nav {
+
+  .active-nav-item {
+    border-bottom: 3px solid $primary-pink;
+  }
+
+  #inner-nav-container {
+
+    height: 45px;
+
+    #nav-logo {
+
+      float: left;
+      margin: 5px 0 0 15px;
+      height: 100%;
+
+      img {
+        max-height: 85%;
+        max-width: 90%;
+      }
+
+    }
+
+    #inkster {
+      color: $primary-pink;
+      margin-right: 10px;
+      margin-top: 12px;
+      margin-left: -3px;
+      border: none;
+      font-size: 20px;
+      text-decoration: none;
+      float: left;
+    }
+
+    .nav-item {
+      margin: 16px 15px 0;
+      text-decoration: none;
+      font-size: 14px;
+      color: $primary-grey;
+      cursor: pointer;
+    }
+
+    .nav-left {
+      float: left;
+    }
+
+    .nav-auth {
+      float: right;
+    }
+
+  }
+
+}
